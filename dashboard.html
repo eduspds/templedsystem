@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoramento</title>
+  <link rel="shortcut icon" href="img/favicon_temp.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: lightgray;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-dashboard {
+      width: 650px;
+      height: 500px;
+      margin: 50px auto;
+      background-color: #ffffff; /* Fundo branco para o container */
+      border-radius: 15px; /* Bordas arredondadas */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      position: relative;
+      padding: 20px; /* Espaçamento interno */
+    }
+
+    h1 {
+      font-size: 24pt;
+      font-weight: bold;
+      color: #016cc7; 
+      text-align: center;
+      margin-bottom: 20px; /* Espaçamento abaixo do título */
+    }
+
+    .label {
+      font-size: 18pt;
+      font-weight: bold;
+      color: #004d40; /* Cor verde escuro */
+      margin-bottom: 10px; /* Espaçamento abaixo das labels */
+    }
+
+    .imagem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px; /* Espaçamento abaixo das imagens */
+    }
+
+    .valor {
+      font-size: 48pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px; /* Espaçamento abaixo dos valores */
+    }
+
+    .valor.temp {
+      color: #d32f2f; /* Cor vermelha para temperatura */
+    }
+
+    .valor.umidade {
+      color: #1976d2; /* Cor azul para umidade */
+    }
+
+    img {
+      width: 80px; /* Tamanho fixo para as imagens */
+      height: auto;
+      object-fit: contain;
+    }
+
+    .row-dashboard {
+      display: flex;
+      justify-content: space-around; /* Espaçamento entre os elementos */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-dashboard">
+    <h1>Monitoramento de Umidade e Temperatura</h1>
+
+    <div class="row-dashboard">
+      <div class="label temp">Temperatura:</div>
+      <div class="label umidade">Umidade:</div>
+    </div>
+
+    <div class="row-dashboard">
+      <div class="imagem temperatura">
+        <img src="/img/temperatura.png" alt="Ícone Temperatura">
+      </div>
+      <div class="imagem umidade">
+        <img src="/img/umidade.png" alt="Ícone Umidade">
+      </div>
+    </div>
+
+    <div class="row-dashboard">
+      <div class="valor temp" id="valorTemp">--</div>
+      <div class="valor umidade" id="valorUmi">--</div>
+    </div>
+  </div>
+</body>
+</html>
