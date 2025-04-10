@@ -30,6 +30,13 @@
           <div class="col-md-7">
             <img src="img/logo.png" class="logo">
             <h1>Monitor de temperatura e umidade</h1>
+            <p class="proposta">Este projeto tem como objetivo medir a temperatura e a umidade do ambiente utilizando um sensor DHT11 ou DHT22 com ESP32. Os dados são enviados para o Firebase e exibidos em tempo real em uma página web.</p>
+            <h2>Com base na temperatura medida:</h2>
+              <ul class="leds">
+                <li>Um LED verde acende quando a temperatura está abaixo de 30°C.</li>
+                <li>Um LED vermelho acende quando a temperatura está acima de 30°C.</li>
+              </ul>
+            <p>Esses LEDs também são simulados na interface web, replicando o comportamento físico do circuito.</p>
             <a href="dashboard.html" class="btn btn-lg btn-red">Acionar <span class="ti-arrow-right"></span></a>
 
           </div>
@@ -39,21 +46,21 @@
         </div>
         <!-- End: Header -->
       </div>
-      <div class="container">
-        <!-- Start: Desc -->
-        <div class="row me-row content-ct">
-          <h2 class="row-title">Principais componentes</h2>
-          <div class="col-md-4 feature">
+
+ <!-- Start: Desc -->
+        <h2 class="row-title">Principais componentes</h2>        
+        <div class="componentes">
+          <div class="feature">
             <span><img src="img/esp32.png" alt=""></span>
             <h3>Esp32</h3>
             <p>O ESP32 é um microcontrolador com Wi-Fi e Bluetooth integrados, ideal para projetos de IoT.</p>
           </div>
-          <div class="col-md-4 feature">
+          <div class="feature">
             <span><img src="img/device_thermostat_24dp_016CC7_FILL0_wght400_GRAD0_opsz24.png" alt=""></span>
             <h3>Sensor DHT11</h3>
             <p>O DHT11 é um sensor digital que mede temperatura e umidade com boa precisão e baixo custo.</p>
           </div>
-          <div class="col-md-4 feature">
+          <div class="feature">
             <span><img src="img/leds.png" class="elementos" alt="LEDs"></span>
             <h3>LEDs</h3>
             <p>LEDs são componentes eletrônicos que emitem luz quando percorridos por corrente elétrica.</p>
@@ -62,24 +69,25 @@
         <!-- End: Desc -->
 
         <!-- Start: Speakers -->
-        <div class="row me-row content-ct speaker" id="speakers">
           <h2 class="row-title">Conheça a equipe</h2>
-          <div class="col-md-4 col-sm-6 feature">
-            <img src="img/speaker-5.png" class="speaker-img">
-            <h3>Eduardo Pires</h3>
-          </div>
-          <div class="col-md-4 col-sm-6 feature">
-            <img src="img/speaker-2.png" class="speaker-img">
-            <h3>Laila Nichole</h3>
-          </div>
-          <div class="col-md-4 col-sm-6 feature">
-            <img src="img/speaker-3.png" class="speaker-img">
-            <h3>Johan Victor</h3>
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-6 feature">
-            <img src="img/speaker-1.png" class="speaker-img">
-            <h3>Levi Figueredo</h3>
+          <div class="speaker">
+            <div class="feature">
+              <img src="img/speaker-5.png" class="speaker-img">
+              <h3>Eduardo Pires</h3>
+            </div>
+            <div class="feature">
+              <img src="img/speaker-1.png" class="speaker-img">
+              <h3>Levi Figueredo</h3>
+            </div>
+            <div class="feature">
+              <img src="img/speaker-2.png" class="speaker-img">
+              <h3>Laila Nichole</h3>
+            </div>
+            <div class="feature">
+              <img src="img/speaker-3.png" class="speaker-img">
+              <h3>Johan Victor</h3>
+            </div>
+            
           </div>
         <!-- End: Speakers -->
       </div>
